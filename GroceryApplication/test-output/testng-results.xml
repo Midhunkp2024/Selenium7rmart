@@ -1,9 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-17T09:02:44 IST" name="GroceryAppication" finished-at="2025-01-17T09:02:44 IST" duration-ms="0">
+  <suite started-at="2025-01-29T18:23:58 IST" name="GroceryAppication" finished-at="2025-01-29T18:25:09 IST" duration-ms="70777">
     <groups>
+      <group name="Smoke">
+        <method signature="LoginPageTest.LoginWithValidCredential()[pri:1, instance:testCase.LoginPageTest@1bb5a082]" name="LoginWithValidCredential" class="testCase.LoginPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
+    <test started-at="2025-01-29T18:23:58 IST" name="ChromeTest" finished-at="2025-01-29T18:25:09 IST" duration-ms="70777">
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:00 IST" name="beforeMethod" finished-at="2025-01-29T18:24:30 IST" duration-ms="29762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="LoginWithValidCredential()[pri:1, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:30 IST" name="LoginWithValidCredential" finished-at="2025-01-29T18:24:40 IST" duration-ms="10419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredential -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:40 IST" name="afterMethode" finished-at="2025-01-29T18:24:41 IST" duration-ms="1027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginWithValidCredential status=SUCCESS method=LoginPageTest.LoginWithValidCredential()[pri:1, instance:testCase.LoginPageTest@1bb5a082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:41 IST" name="beforeMethod" finished-at="2025-01-29T18:24:49 IST" duration-ms="7342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin()[pri:2, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:49 IST" name="verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin" finished-at="2025-01-29T18:24:51 IST" duration-ms="1959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:51 IST" name="afterMethode" finished-at="2025-01-29T18:24:51 IST" duration-ms="610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin status=SUCCESS method=LoginPageTest.verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin()[pri:2, instance:testCase.LoginPageTest@1bb5a082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:52 IST" name="beforeMethod" finished-at="2025-01-29T18:24:57 IST" duration-ms="5612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:57 IST" name="verifyAlertMessageWhileLoginWithInvalidCredential" data-provider="data-provider" finished-at="2025-01-29T18:24:58 IST" duration-ms="721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Midhun]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageWhileLoginWithInvalidCredential -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:58 IST" name="afterMethode" finished-at="2025-01-29T18:24:58 IST" duration-ms="483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageWhileLoginWithInvalidCredential status=SUCCESS method=LoginPageTest.verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:24:58 IST" name="beforeMethod" finished-at="2025-01-29T18:25:02 IST" duration-ms="4107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:25:02 IST" name="verifyAlertMessageWhileLoginWithInvalidCredential" data-provider="data-provider" finished-at="2025-01-29T18:25:03 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Midhun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageWhileLoginWithInvalidCredential -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:25:03 IST" name="afterMethode" finished-at="2025-01-29T18:25:04 IST" duration-ms="555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageWhileLoginWithInvalidCredential status=SUCCESS method=LoginPageTest.verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:25:04 IST" name="beforeMethod" finished-at="2025-01-29T18:25:08 IST" duration-ms="3769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:25:08 IST" name="verifyAlertMessageWhileLoginWithInvalidCredential" data-provider="data-provider" finished-at="2025-01-29T18:25:08 IST" duration-ms="751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Midhun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Midhun]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageWhileLoginWithInvalidCredential -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@1bb5a082]" started-at="2025-01-29T18:25:08 IST" name="afterMethode" finished-at="2025-01-29T18:25:09 IST" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageWhileLoginWithInvalidCredential status=SUCCESS method=LoginPageTest.verifyAlertMessageWhileLoginWithInvalidCredential(java.lang.String,java.lang.String)[pri:3, instance:testCase.LoginPageTest@1bb5a082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
+    </test> <!-- ChromeTest -->
   </suite> <!-- GroceryAppication -->
 </testng-results>

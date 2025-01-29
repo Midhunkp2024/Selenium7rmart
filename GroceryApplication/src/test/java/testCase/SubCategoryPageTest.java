@@ -22,7 +22,7 @@ public class SubCategoryPageTest extends BaseClass {
 		scp = hp.clickOnSubCategoryMenu();
 		scp.addSubCategory();
 		boolean alertStatus = scp.getAlertMessage().contains("Sub Category Created Successfully");
-		Assert.assertEquals(alertStatus, true, "alert message not as expected");
+		Assert.assertEquals(alertStatus, true,Constant.Scp_CreateNewSubCategory);
 	}
 
 	@Test(priority = 3)
@@ -33,7 +33,7 @@ public class SubCategoryPageTest extends BaseClass {
 		scp = hp.clickOnSubCategoryMenu();
 		scp.deleteSubCategory();
 		boolean deleteAlertStatus = scp.deleteMessage().contains(".........RESULT NOT FOUND.......");
-		Assert.assertEquals(deleteAlertStatus, true, "Delete alert message not as expected");
+		Assert.assertEquals(deleteAlertStatus, true, Constant.Scp_DeleteSubCategory);
 	}
 
 	@Test(priority = 2)
@@ -45,7 +45,7 @@ public class SubCategoryPageTest extends BaseClass {
 		scp = hp.clickOnSubCategoryMenu();
 		scp.editSubCategory();
 		boolean editAlertStatus = scp.editMessage().contains("Sub Category Updated Successfully");
-		Assert.assertEquals(editAlertStatus, true, "edit alert message not as expected");
+		Assert.assertEquals(editAlertStatus, true, Constant.Scp_EditSubCategory);
 
 	}
 
@@ -57,7 +57,7 @@ public class SubCategoryPageTest extends BaseClass {
 		scp.changeStatus();
 		boolean changeStatusAlertMessage = scp.statusAlertMessage()
 				.contains("Sub Category Status Changed Successfully");
-		Assert.assertEquals(changeStatusAlertMessage, true, "::Status change message not as expected");
+		Assert.assertEquals(changeStatusAlertMessage, true, Constant.Scp_ChangeStatusOfSubCategory);
 
 	}
 
@@ -69,7 +69,7 @@ public class SubCategoryPageTest extends BaseClass {
 		scp.homeHyperlink();
 		String actual = hp.getHomePageHeading();
 		String expected = "7rmart supermarket";
-		Assert.assertEquals(actual, expected, Constant.lp_LoginWithValidCredential);
+		Assert.assertEquals(actual, expected, Constant.Scp_HomeHyperlinkFunctionality);
 	}
 
 }

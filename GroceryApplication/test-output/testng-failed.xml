@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.ManageContactPageTest">
+      <class name="testCase.LoginPageTest">
         <methods>
-          <include name="verifyCreateNewCategory"/>
+          <include name="verifyAlertMessageWhileRememberMeIconIsClickedAndRelogin"/>
           <include name="afterMethode"/>
+          <include name="verifyAlertMessageWhileLoginWithInvalidCredential"/>
           <include name="beforeMethod"/>
+          <include name="LoginWithValidCredential"/>
         </methods>
-      </class> <!-- testCase.ManageContactPageTest -->
+      </class> <!-- testCase.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

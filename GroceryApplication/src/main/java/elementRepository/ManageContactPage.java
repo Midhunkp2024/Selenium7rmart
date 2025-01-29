@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.FakerUtility;
 import utilities.GeneralUtilities;
 
 public class ManageContactPage {
 	WebDriver driver;
 	GeneralUtilities gu = new GeneralUtilities();
+	FakerUtility fu = new FakerUtility();
 	
 	public ManageContactPage(WebDriver driver) {
 		this.driver = driver;
@@ -25,10 +27,10 @@ public class ManageContactPage {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement alertMessage;
 	
-	public void editContact(String phone) {
-		editButton.click();
-		phoneNumberField.clear();		
-		phoneNumberField.sendKeys(phone);
+	public void editContact() {
+		editButton.click();		
+		phoneNumberField.clear();
+		phoneNumberField.sendKeys(fu.generateRandomDigits(10));
 		gu.clickJavaScriptExecutor(driver, updateButton);
 	}
 	public String getAlertMessage() {

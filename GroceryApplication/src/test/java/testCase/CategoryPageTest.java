@@ -6,11 +6,12 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import elementRepository.CategoryPage;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
 
-public class CategoryPageTest extends BaseClass {
+public class CategoryPageTest extends BaseClass {//inheritance
 	LoginPage lp;
 	HomePage hp;
 	CategoryPage cp;
@@ -22,7 +23,7 @@ public class CategoryPageTest extends BaseClass {
 		cp = hp.clickOnCategoryMenu();
 		cp.editCategory();
 		boolean editAlertStatus = cp.categoryEditStatusAlert().contains("Category Updated Successfully");
-		Assert.assertEquals(editAlertStatus, true, "edit alert message not as expected");
+		Assert.assertEquals(editAlertStatus, true,Constant.Cp_EditNewCategory );
 
 	}
 
@@ -34,7 +35,7 @@ public class CategoryPageTest extends BaseClass {
 		String imagePath = System.getProperty("user.dir") + "/src/main/resources/Attachments/pen.PNG";
 		cp.addNewCategory(groceryLogin(10, 1), imagePath);
 		boolean alertStatus = cp.categoryAddStatusAlert().contains("Category Created Successfully");
-		Assert.assertEquals(alertStatus, true, "Alert message not as expected");
+		Assert.assertEquals(alertStatus, true, Constant.Cp_CreateNewCategory);
 	}
 
 	@Test(priority = 3)
@@ -46,6 +47,6 @@ public class CategoryPageTest extends BaseClass {
 		cp.deleteSelectedCategory(groceryLogin(11, 1));
 		cp.searchCategory(groceryLogin(11, 1));
 		boolean deleteAlertStatus = cp.searchResultAfterDeleteCategory().contains(".........RESULT NOT FOUND.......");
-		Assert.assertEquals(deleteAlertStatus, true, "Delete alert message not as expected");
+		Assert.assertEquals(deleteAlertStatus, true, Constant.Cp_DeleteCategory);
 	}
 }

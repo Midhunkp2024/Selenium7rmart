@@ -5,9 +5,10 @@
 		</listeners>
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<!--<class name="testCase.LoginPageTest"></class>-->
+			<class name="testCase.LoginPageTest"></class>
 			<!--<class name="testCase.CategoryPageTest"></class>-->
-			<class name="testCase.ManageContactPageTest"></class>
+			<!--<class name="testCase.SubCategoryPageTest"></class>-->
+			<!--<class name="testCase.ManageContactPageTest"></class>-->
 		</classes>
 	</test>
 </suite>

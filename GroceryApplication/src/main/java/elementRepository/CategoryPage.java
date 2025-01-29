@@ -68,7 +68,7 @@ public class CategoryPage {
 		categoryEditIcon.click();
 		editCategoryName.sendKeys("new");		
 		gu.pageScroll(200,400, driver);
-		//wu.waitForWebElement(driver, categoryUpdateButton, "text()","Update", 5);	
+		wu.waitForWebElement(driver, categoryUpdateButton, "class","btn btn-danger", 10);	
 		System.out.println(editCategoryName.getText());
 		//categoryUpdateButton.click();
 		gu.clickJavaScriptExecutor(driver,categoryUpdateButton);
